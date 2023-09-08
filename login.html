@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="styles.css" rel="stylesheet">
+    <!-- link for google font and icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Since its a login page, there will be no scrolling.
+         going to wrap the entire page in a flexbox to easily center the login -->
+    <div class="wrapper">
+
+        <!-- Login box code goes here -->
+        <div id="login-box">
+
+            <!-- code for the header to align, using a div to 
+                fill the entire space of the box and center the contents,
+                and another div to center space out the contents in the middle -->
+            <div class="header">
+                <div class="header-slim">
+                    <span class="material-symbols-outlined">kayaking</span>
+                    <p>AquaQuest</p>
+                </div>
+
+                <!-- login buttons -->
+                <div class="input-fields">
+                        <input type="text" id="uname" placeholder="Username">
+                        <input type="password" id="pw" placeholder="Password">
+                        <button id="submit">Submit</button>
+                </div>
+                <div class="switch">
+                        <div id="selected"></div>
+                        <button class="swap" onclick="left()">Login</button>
+                        <button class="swap" onclick="right()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- This is a buffer to position the login box on the left -->
+        <!-- <div class="buffer"></div> -->
+    </div>
+    <script src="login-swap.js"></script>
+</body>
+</html>
