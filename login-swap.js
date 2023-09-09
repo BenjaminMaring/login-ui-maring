@@ -1,16 +1,16 @@
 var selected = document.getElementById("selected");
-var choice = 1
+var choice = false
 
 function left() {
-    if (choice !== 1) {
+    if (choice !== false) {
         selected.style="transform: translateX(0%);"
-        choice = 1
+        choice = false
     }
 }
 
 function right() {
-    if (choice !== 2) {
+    if (choice !== true) {
         selected.style="transform: translateX(100%);"
-        choice = 2
+        choice = true
     }
 }
