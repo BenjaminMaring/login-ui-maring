@@ -5,7 +5,8 @@
 
 body {
     background-image: url(kayak.jpg);
-    background-size: 120%;
+    background: cover;
+    background-position: 30% 20%;
     padding: 0px;
     margin: 0px;
     font-family: 'Poppins', sans-serif;
@@ -54,7 +55,7 @@ body {
 
 .header-slim {
     width: 70%;
-    height: 35%;
+    height: 30%;
     display: flex;
     justify-content: space-evenly;
     /* border: solid 2px blue; */
@@ -62,13 +63,15 @@ body {
 
 span {
     align-self: center;
-    font-size: 1.3em !important;
+    font-size: 1.4em !important;
     color: var(--dark-blue);
     
 }
 p {
     align-self: center;
     color: var(--blue);
+    font-size: 1.2em;
+
 }
 
 .input-fields {
@@ -154,6 +157,21 @@ input:focus {
 
 .swap:hover {
     text-decoration: underline white;
+}
+
+.a-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-evenly;
+}
+
+a {
+    font-size: .5em;
+    align-self: center;
+    text-decoration: underline var(--dark-blue);
+    color: var(--blue);
+    font-family: 'Poppins', sans-serif;
 }
 
 .buffer {
