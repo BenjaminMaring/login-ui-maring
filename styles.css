@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image: url(kayak.jpg);
+    background-image: url(./Kayak.jpg);
     background: cover;
     background-position: 30% 20%;
     padding: 0px;
