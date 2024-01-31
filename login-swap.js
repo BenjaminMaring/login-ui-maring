@@ -1,4 +1,5 @@
 var selected = document.getElementById("selected");
+
 var choice = false
 
 function left() {
@@ -13,4 +14,14 @@ function right() {
         selected.style="transform: translateX(100%);"
         choice = true
     }
+}
+
+const btn = document.getElementById('submit');
+btn.addEventListener('click', e => {
+    changeColor(e)
+})
+
+function changeColor(e) {
+    const color=`rgb(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)})`
+    e.target.style.backgroundColor = color;
 }
